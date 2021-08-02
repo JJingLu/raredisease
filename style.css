@@ -144,7 +144,7 @@ body {
   text-align: center;
 }
 #article-details.stuck {
-  position: absolute;
+  position:absolute;
 }
 #article-details .article-category a {
   font-family: "Josefin Sans", sans-serif;
@@ -170,7 +170,7 @@ body {
   margin-bottom: 0.4em;
 }
 #article-details h1.article-title > span:last-child {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "webfontregular", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 2.5em;
@@ -233,7 +233,7 @@ body {
   font-family: "Halant", serif;
   font-weight: 400;
   font-size: 1.6em;
-  line-height: 1.571em;
+  line-height: 2em;
 }
 #article-body .article-copy p {
   margin: 0 0 1.571em 0;
@@ -242,10 +242,10 @@ body {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 15.3em;
+  font-size: 5em;
   color: #000000;
   float: left;
-  line-height: 0.7em;
+  line-height: 1em;
   margin: 0 0.09em 0.1em 0;
 }
 
@@ -743,3 +743,214 @@ h2{
     height: 145vh;
     vertical-align: bottom;
 }
+
+
+
+/*************************************************************
+  BASIC STYLES
+**************************************************************/
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Overlock:400,400i,700|Oleo+Script';
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  font-size: 62.5%;
+  font-family: 'Overlock', Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  margin:0;
+}
+
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+  line-height:20px; 
+  font-family:'STZhongsong', sans-serif;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:50vh;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'STZhongsong', sans-serif; font-size:70px; font-weight:400;letter-spacing:10px; text-align:center; text-transform: uppercase; color:rgb(255, 255, 255); padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'webfontregular',fantasy; font-size:100px;line-height:300px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'STZhongsong', sans-serif; font-size:50px; line-height:70px; font-weight:400; letter-spacing:8px; text-align:center; text-transform: uppercase; color:white;}
+
+#parallax-world-of-ugg a {
+  font-size:20px;
+  text-align:center; 
+  color:rgb(255, 255, 255);
+  box-shadow: inset 0px -10px 0px 0px rgba(0,0,0,0.1);
+  font-weight: bold;
+  transition: .2s ease-out;
+  padding: 0 3px;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+  
+        
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 600px; padding-bottom: 0px; overflow: hidden; position: relative; width: 100%; background-image: url(img/小琳.png); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 600px; padding-bottom: 0px; overflow: hidden; position: relative; width: 100%; background-image: url(img/郭朋贺.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 600px; padding-bottom: 0px; overflow: hidden; position: relative; width: 100%; background-image: url(img/基因治疗.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-four {padding-top: 600px; padding-bottom: 0px; overflow: hidden; position: relative; width: 100%; background-image: url(img/医保政策.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+
+
+body {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+svg {
+  width: 100vh;
+  height: 30vh;
+  display: block;
+  margin: 0 auto;
+}
+
+#IKnow, #close, #ISay, #closer, #YouKnow, #closest, #Sdras {
+opacity:0
+}
+
+
