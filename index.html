@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="https://code.jscharting.com/latest/jscharting.js"></script>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
@@ -6,8 +7,9 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
-
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="jquery.min.js"></script>
   <script src="https://public.flourish.studio/resources/embed.js"></script>
@@ -15,12 +17,13 @@
   <script src="stickyfill.min.js"></script>
   <script src="scrollama.min.js"></script>
   <script src="actions.js"></script>
+  <script src="https://code.jscharting.com/latest/jscharting.js"></script>
     <style>
       .rectangle:hover{
       opacity:1;
       }
     </style>
-    
+
     <style>
       @font-face {
       font-family: 'webfontregular';
@@ -95,6 +98,7 @@
       }   
       
     </style>
+    
 </head>
 
 <body>
@@ -175,7 +179,7 @@
                     <use class="beam" width="306" height="505.47" transform="translate(-50 485) scale(0.84)" xlink:href="#beam" />
                     <use class="beam" width="306" height="505.47" transform="translate(93 500) scale(0.57)" xlink:href="#beam" />
                 </g>
-            </g>
+            </g></svg>
             
     <section id="article-cover">       
       <div id="article-details">
@@ -214,7 +218,7 @@
             // generic window resize listener event
             function handleResize() {
               // 1. update height of step elements
-              var stepH = Math.floor(window.innerHeight * 1.2);
+              var stepH = Math.floor(window.innerHeight * 1);
               
               step.style("height", 250 + "px");
       
@@ -284,8 +288,7 @@
           </script>
       </body>
         
-               
-            
+                          
 <main>
   <section id="scrolly">
     <figure style="height: 353px; top: 0px;">
@@ -400,7 +403,7 @@
       // generic window resize listener event
       function handleResize() {
         // 1. update height of step elements
-        var stepH = Math.floor(window.innerHeight * 1.2);
+        var stepH = Math.floor(window.innerHeight * 1);
         step.style("height", 250 + "px");
 
         var figureHeight = window.innerHeight ;
@@ -557,6 +560,7 @@
         <p>
         2013年，黄昱和其他医生一道推动了第一届庞贝病友交流会的举办，从那时候起，QQ群成为了病友会——后来的庞贝氏罕见病关爱中心——的基地，群成员人数也慢慢从最初的几十人增加到了上百人。病友会初见规模，如果能找到带领病友做事的人，黄昱觉得自己就可以退场了。
         </p>
+        <div class="infogram-embed" data-id="3e122da3-3cd4-4bfa-a808-78f5759310e3" data-type="interactive" data-title="罕见病组织"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
         
         <p>
         郭朋贺出现在这个时候。她确诊于2014年，刚进群的时候不太说话，只偶尔看看消息——那时，病情还没有发展到使生活翻天覆地的地步，她甚至还能正常上班。她只模糊地有一种“命运”的感受，每当群里有患者情况恶化，或者在聊天框里表达消极情绪的时候，她知道自己将来可能也会这样。无论是她自己还是其他人，都仍然对此无能为力。
@@ -588,7 +592,7 @@
         </p>
         <p>
         病友会的三大愿望也就清楚了：第一，特效药要进中国市场。第二，患者要买得起，在当时的病友们看来，最容易想到的办法是推动医保报销。第三，中国要研发出自己的药物，无论是仿制药还是新药。
-        </p><p class="line-break margin-top-10"></p></div></div></section>
+        </p><p class="line-break margin-top-10"></p></div></section>
 
       <div id="parallax-world-of-ugg">   
       <div class="parallax-three">
@@ -643,6 +647,7 @@
         <p>
         吴小兵之前一直在中国国家疾控中心（CDC）工作。2003年，她带领团队申报了国内第一个AAV基因治疗药品临床试验。转战罕见病后，她又于2018年建立了锦篮基因公司。为了研究罕见病，她从CDC辞职建立瑞希。在瑞希的时候，她所有的研究都得自掏腰包，“拆东墙补西墙”。“看看有没有钱买一只小鼠，哦，有钱，就继续做。”
         </p>
+        <div class="infogram-embed" data-id="07f9d449-c39b-400e-9e67-3d77dcac1372" data-type="interactive" data-title="Teal Light"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
         <p>
         她喜欢把钱砸在实验室里，这是她做公益的方式。
         </p>
