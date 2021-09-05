@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Halant:400,500,300,600,700|Josefin+Sans:400,100italic,100,300,300italic,400italic,600,600italic,700|Playfair+Display:400,400italic,700,700italic,900,900italic);
+
+
+
 figure {
   margin: 0;
 }
@@ -32,6 +35,7 @@ body {
     width: 1024px;
   }
 }
+
 
 #menu {
   height: 100vh;
@@ -938,6 +942,11 @@ body {
 }
 
 
+
+
+
+
+
 body {
   padding: 0;
   background-color: #ffffff;
@@ -955,3 +964,107 @@ opacity:0
 }
 
 
+
+
+body{
+  background: #fff;
+}
+
+.obal{
+  background: #fff;
+  padding: 40px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 100px auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 2px rgba(11, 1, 41, 0.06)
+}
+
+  .person-1, .person-2{
+    margin-top: 0;
+    padding: 0;
+    opacity: 0;
+    display: block;
+    transition: .5s ease-in-out;
+    width: 100%
+  }
+
+  .person-1{
+    text-align: left;
+  }
+  .person-2{
+    text-align: right;
+  }
+  .person-1.activated-typeit::before, .person-2.activated-typeit::after{
+    content: '';
+    width: 35px;
+    height: 35px;
+    background: grey;
+    display: inline-block;
+    vertical-align: bottom;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center}
+
+  .person-1.activated-typeit::before{
+    background-image: url('http://aurel.clanweb.eu/nikita/person_1.jpg')}
+
+  .person-2.activated-typeit::after{
+    background-image: url('http://aurel.clanweb.eu/nikita/person_2.jpg')}
+
+  .person-1 p, .person-2 p{
+    padding: 10px 15px;
+    display: inline-block;
+    max-width: 60%;
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    width: auto;
+    box-sizing: border-box;
+    font-weight: 400;
+    text-align: left}
+
+  .person-1 p{
+    margin-left: 2% !important;
+    border-radius: 15px 15px 15px 3px;
+    color: white;
+    background-attachment: fixed;
+    background-color: #1B69BF;
+    background-image: linear-gradient(0deg, rgba(3, 73, 150, 1) 0%, rgba(105, 176, 255, 1) 100%)}
+
+  .person-2 p{
+    background: #f1f0f0;
+    margin-right: 2% !important;
+    border-radius: 15px 15px 3px 15px;
+    color: black}
+
+  .activated-typeit{
+    opacity: 1 !important;
+    margin-top: 25px}
+
+  div:first-child{
+    margin-top: 0}
+
+.slash-typeit{
+  font-weight: 900;
+  color: orange;
+  animation: slash-typeit .2s infinite linear}
+
+@keyframes slash-typeit{
+  0%{
+    opacity: .1}
+
+  100%{
+    opacity: 1}}
+
+.break-typeit{
+  
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 10px auto;
+  position: relative}
+
+  
