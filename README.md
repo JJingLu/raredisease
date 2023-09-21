@@ -1,7 +1,7 @@
 # raredisease
 Welcome to this data journalism project! 🥳
 
-This project is a self-developed and coded data journalism piece that combines **dynamic visualization** with **in-depth reporting** to bring to light the situation of rare diseases, much like an iceberg. You can view the output of this project at https://ljune1999.github.io/raredisease/.
+This project is a self-developed and coded data journalism piece that combines **dynamic visualization** with **in-depth reporting** to bring to light the situation of rare diseases, much like an iceberg. You can view the output of this project at [https://ljune1999.github.io/raredisease/](https://jjinglu.github.io/raredisease/).
 
 I am thrilled to announce that this project was：
 
